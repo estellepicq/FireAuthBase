@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1 class="mt-5">Welcome on FireAuthBase</h1>
+    <p class="lead">Base app for Angular projects running with a Firebase back-end</p>
+    <button *ngIf="!(afAuth.user| async)" type="button" name="login" class="btn btn-primary mr-3" routerLink="/login">Login</button>
+    <button *ngIf="!(afAuth.user| async)" type="button" name="register" class="btn btn-primary" routerLink="/register">Register</button>
+    <button *ngIf="afAuth.user| async" type="button" name="profile" class="btn btn-primary mr-3" routerLink="/profile">Profile</button>
+    <!-- <button *ngIf="afAuth.user| async" type="button" name="your-button-name" class="btn btn-primary" routerLink="/your-route">Your-label</button> -->
+  </div>
+</div>
